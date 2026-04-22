@@ -2,6 +2,9 @@ while True:
     try:
         v1 = float(input("\nInforme os rendimentos de 2022: "))
         v2 = float(input("\nInforme os rendimentos de 2023: "))
+        if v1 == 0:
+          print("Erro: O rendimento de 2022 não pode ser zero para calcular a variação.")
+          continue
     except ValueError:
         print("Erro: insira apenas numeros!")
         continue
